@@ -10,3 +10,7 @@ Run in terminal `python3 scrape7.py`
 * dlib
 * tkinter
 * webbrowser
+
+## Sample Notification :
+Here is one sample notification :
+![sample](notification.png)
