@@ -63,12 +63,9 @@ def get_question_from_tag(tag, last_qs):
     new_summary = all_summaries[0]
     all_links = new_summary.find_all('a', class_='question-hyperlink')
     new_qs_link = all_links[0].get('href')
-    #print(f'new_qs_link : {new_qs_link}')
     new_qs_title = all_links[0].text
-    #print(f'new_qs_title : {new_qs_title}')
     all_exceprts = new_summary.find_all('div', class_='excerpt')
     new_qs_excerpt = all_exceprts[0].text
-    #print(f'new_qs_excerpt : {new_qs_excerpt}')
     all_post_tags = new_summary.find_all('a', class_='post-tag')
     new_qs_tags = ', '.join(set([k.text for k in all_post_tags]))
 
